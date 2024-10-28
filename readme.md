@@ -10,8 +10,7 @@ To run the University Finder Tool on your local machine, follow these steps:
 
 Steps to Run
 git clone https://github.com/devToluwa/University-Finder-Tool.git
-cd University-Finder-Tool
-
+Launch the index.html file
 GitHub Pages Issues
 While the University Finder Tool is hosted on GitHub Pages at https://devtoluwa.github.io/University-Finder-Tool/, there are conflicts with API requests due to GitHub Pages enforcing HTTPS.
 
