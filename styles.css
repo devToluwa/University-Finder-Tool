@@ -1,0 +1,292 @@
+/* General styling for the body */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.185);
+  padding: 40px 30px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  /* box-sizing: border-box; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #4b4b4b;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #4b4b4b;
+}
+
+/* Input field*/
+#country-search {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+
+  width: 510px;
+}
+
+#country-search:focus {
+  outline: none;
+  border-color: #ff5722;
+}
+
+button {
+  padding: 15px;
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+
+  width: 540px;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Dropdown list*/
+#country-list {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  padding: 0;
+  display: none;
+  list-style: none;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+
+  width: 540px;
+}
+
+#country-list li {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+#country-list li:hover {
+  background-color: #ffecdd;
+}
+
+/* University list */
+.university-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.university-list li {
+  background-color: #fafafa;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  width: 520px;
+}
+
+.university-list a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.university-list a:hover {
+  text-decoration: underline;
+}
+
+.university-list {
+  margin-top: 20px;
+}
+
+.number-of-universities {
+  padding-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.not-found {
+  padding: 14px 0;
+  color: red;
+  font-weight: 700;
+}
+
+@media (max-width: 786px) {
+
+  body {
+    padding: 100px 200px;
+  }
+
+  #country-search {
+    width: 290px; /* Full width for search input */
+    padding: 10px; /* Adjust padding for smaller input */
+  }
+
+  button {
+    width: 310px;/* Full width for button */
+    padding: 10px; /* Adjust padding for smaller button */
+  }
+
+  #country-list {
+    width: 310px /* Full width for dropdown list */
+  }
+
+  .container {
+    padding: 100px; /* Adjust padding for container */
+    /* padding: 100px 350px; */
+    /* padding: 100px 100px; */
+    max-width: 100%; /* Ensure container is responsive */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduce font size for headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  h2 {
+    font-size: 24px; /* Reduce font size for sub-headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .university-list li {
+    width: 100%; /* Full width for university list items */
+  }
+}
+
+@media (max-width: 540px) {
+
+  .number-of-universities {
+    font-size: 16px;
+  }
+
+  body {
+    /*padding: 100px; /* Add padding for small screens */
+    padding: 100px 150px;
+  }
+
+  #country-search {
+    width: 180px; /* Full width for search input */
+    padding: 10px; /* Adjust padding for smaller input */
+  }
+
+  button {
+    width: 200px;
+    padding: 10px; /* Adjust padding for smaller button */
+  }
+
+  #country-list {
+    width: 200px; /* Full width for dropdown list */
+  }
+
+  .container {
+    padding: 100px;
+    max-width: 100%; /* Ensure container is responsive */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduce font size for headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  h2 {
+    font-size: 24px; /* Reduce font size for sub-headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .university-list li {
+    width: 100%; /* Full width for university list items */
+  }
+}
+
+@media (max-width: 380px) {
+  .number-of-universities {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  body {
+    /*padding: 100px; /* Add padding for small screens */
+    padding: 100px 150px;
+  }
+
+  #country-search {
+    width: 180%; /* Full width for search input */
+    padding: 10px; /* Adjust padding for smaller input */
+  }
+
+  button {
+    width: 200%; /* Full width for button */
+    padding: 10px; /* Adjust padding for smaller button */
+  }
+
+  #country-list {
+    width: 150px; /* Full width for dropdown list */
+  }
+
+  .container {
+    padding: 100px; /* Adjust padding for container */
+    /* padding: 100px 350px; */
+    /* padding: 100px 100px; */
+    max-width: 100%; /* Ensure container is responsive */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduce font size for headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  h2 {
+    font-size: 24px; /* Reduce font size for sub-headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .university-list li {
+    width: 100%; /* Full width for university list items */
+  }
+}

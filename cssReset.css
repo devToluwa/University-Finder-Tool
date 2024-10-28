@@ -1,0 +1,69 @@
+/* Reset all default browser styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Ensure HTML and body take up full height */
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+/* Set default block display for common elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* Remove list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove quotes from blockquotes and q elements */
+blockquote, q {
+  quotes: none;
+}
+
+/* Reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set defaults for form elements */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+/* Prevent resizing of images beyond their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure elements take up the entire available width */
+body, html {
+  width: 100%;
+}
+
+/* Reset table layout */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

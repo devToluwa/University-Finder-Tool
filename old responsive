@@ -1,0 +1,69 @@
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    /*padding: 100px; /* Add padding for small screens */
+    padding: 100px 200px;
+  }
+
+  #country-search {
+    width: 100%; /* Full width for search input */
+    padding: 10px; /* Adjust padding for smaller input */
+  }
+
+  button {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Adjust padding for smaller button */
+  }
+
+  #country-list {
+    width: 100%; /* Full width for dropdown list */
+  }
+
+  .container {
+    padding: 100px; /* Adjust padding for container */
+    /* padding: 100px 350px; */
+    /* padding: 100px 100px; */
+    max-width: 100%; /* Ensure container is responsive */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduce font size for headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  h2 {
+    font-size: 24px; /* Reduce font size for sub-headers */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .university-list li {
+    width: 100%; /* Full width for university list items */
+  }
+}
+
+@media (max-width: 940px){
+
+  .container, h2, button, #country-search, .country-list, .not-found, #university-list{
+    width: 100px;
+  }
+
+  .container{
+    gap: 10px;
+  }
+
+  h2{
+    /* width: 100px; */
+    font-size: 10px;
+  }
+  
+  button{
+    /* width: 100px; */
+    font-size: 12px;
+  }
+
+  #country-search{
+    /* width: 100px; */
+    font-size: 12px;
+  }
+
+}
